@@ -4,7 +4,7 @@
 const http = require("http"); // 1
 
 const hostname = "127.0.0.1"; // 2
-const port = 8000; // 3
+const port = 3000; // 3
 
 // 4
 const server = http.createServer((req, res) => {
@@ -18,9 +18,7 @@ const server = http.createServer((req, res) => {
     // 9
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
-    res.end(
-      '<h1>Login Page</h1><form><input type="text" placeholder="Username"><br><input type="password" placeholder="Password"><br><button type="submit">Login</button></form>'
-    );
+    res.end(`<h2>`);
   } else {
     // 10
     res.statusCode = 404;
