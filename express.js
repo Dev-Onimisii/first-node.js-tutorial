@@ -3,7 +3,7 @@
 
 const express = require("express"); // 1
 const app = express(); // 2
-const port = 3000; // 3
+const port = 8000; // 3
 
 // 4
 app.get("/", (req, res) => {
