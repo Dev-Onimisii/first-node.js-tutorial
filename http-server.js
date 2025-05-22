@@ -4,7 +4,7 @@
 const http = require("http"); // 1
 
 const hostname = "127.0.0.1"; // 2
-const port = 8000; // 3
+const port = 8001; // 3
 
 // 4
 const server = http.createServer((req, res) => {
@@ -13,17 +13,17 @@ const server = http.createServer((req, res) => {
     // 6
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html"); // 7
-    res.end("<h1>Welcome to the http-server.js Home Page!</h1>"); // 8
+    res.end("<h1>Welcome to the (http-server.js) homepage i created</h1>"); // 8
   } else if (req.url === "/login") {
     // 9
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
-    res.end("<h1>This is the login page of http-server</h1>");
+    res.end("<h1>This is the login page of (http-server.js)</h1>");
   } else {
     // 10
     res.statusCode = 404;
     res.setHeader("Content-Type", "text/html");
-    res.end("<h1>This is an Erro</h1>");
+    res.end("<h1>This is an Error</h1>");
   }
 });
 
