@@ -7,7 +7,7 @@ const port = 3000; // 3
 
 // 4
 app.get("/", (req, res) => {
-  res.send("<h1>Welcome to the Home Page (Express)!</h1>"); // 5
+  res.send("<h1>Welcome to express.js Home Page</h1>"); // 5
 });
 
 // 6
