@@ -3,18 +3,16 @@
 
 const express = require("express"); // 1
 const app = express(); // 2
-const port = 8000; // 3
+const port = 5000; // 3
 
 // 4
 app.get("/", (req, res) => {
-  res.send("<h1>Welcome to express.js Home Page</h1>"); // 5
+  res.send("<h1>Welcome to (express.js) homeage</h1>"); // 5
 });
 
 // 6
 app.get("/login", (req, res) => {
-  res.send(
-    '<h1>Login Page (Express)</h1><form><input type="text" placeholder="Username"><br><input type="password" placeholder="Password"><br><button type="submit">Login</button></form>'
-  );
+  res.send("<h1> This is the login page of (express.js)");
 });
 
 // 7

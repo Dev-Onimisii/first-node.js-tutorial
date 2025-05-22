@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
     // 6
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html"); // 7
-    res.end("<h1>Welcome to the (http-server.js) homepage i created</h1>"); // 8
+    res.end("<h1>Welcome to (http-server.js) homepage</h1>"); // 8
   } else if (req.url === "/login") {
     // 9
     res.statusCode = 200;
