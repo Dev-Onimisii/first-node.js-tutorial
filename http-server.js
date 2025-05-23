@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
   } else {
     res.statusCode = 404;
     res.setHeader("Content-Type", "text/html");
-    res.end("<h1>This is an Error</h1>");
+    res.end("<h1>Page Unavailable</h1>");
   }
 });
 
