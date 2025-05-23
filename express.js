@@ -10,7 +10,11 @@ mainExpress.get("/", (req, res) => {
 });
 
 mainExpress.get("/login", (req, res) => {
-  res.send("<h1> This is the login page of (express.js)");
+  res.send("<h1>This is the login page of (express.js)");
+});
+
+mainExpress.get("/admin", (req, res) => {
+  res.send("<h1>This is the admin page of (express.js)");
 });
 
 mainExpress.listen(port, () => {

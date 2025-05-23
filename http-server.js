@@ -15,6 +15,10 @@ const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
     res.end("<h1>This is the login page of (http-server.js)</h1>");
+  } else if (req.url === "/admin") {
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/html");
+    res.end("<h1>This is the admin page of (express.js)");
   } else {
     res.statusCode = 404;
     res.setHeader("Content-Type", "text/html");
