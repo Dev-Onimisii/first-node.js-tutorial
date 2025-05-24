@@ -3,7 +3,7 @@
 
 const express = require("express");
 const mainExpress = express();
-const port = 8000;
+const port = 6000;
 
 mainExpress.get("/", (req, res) => {
   res.send("<h1>Welcome to (express.js) homeage</h1>");
