@@ -4,7 +4,7 @@
 const http = require("http");
 
 const hostname = "127.0.0.1";
-const port = 8080;
+const port = 5000;
 
 const server = http.createServer((req, res) => {
   if (req.url === "/") {
@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
   } else {
     res.statusCode = 404;
     res.setHeader("Content-Type", "text/html");
-    res.end("<h1>Page Unavailable</h1>");
+    res.end("<h1>Page Unavailable, this is an error</h1>");
   }
 });
 
